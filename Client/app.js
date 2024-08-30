@@ -38,8 +38,8 @@ function onClickedEstimatePrice() {
     var location = document.getElementById("uiLocations");
     var estPrice = document.getElementById("uiEstimatedPrice");
 
-    var url = "http://127.0.0.1:5000/predict_home_price"; // Use this if you are NOT using nginx
-    // var url = "/api/predict_home_price"; // Use this if you are using nginx
+    //var url = "http://127.0.0.1:5000/predict_home_price"; // Use this if you are NOT using nginx
+    var url = "/api/predict_home_price"; // Use this if you are using nginx
 
     $.post(url, {
         total_sqft: parseFloat(sqft.value),

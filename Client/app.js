@@ -18,7 +18,7 @@ function getBHKValue() {
     return -1; // Invalid Value
 }
 
-// Add a function to get the value of the balcony
+// Function to get the value of the balcony
 function getBalconyValue() {
     var uiBalcony = document.getElementsByName("uiBalcony");
     for (var i in uiBalcony) {
